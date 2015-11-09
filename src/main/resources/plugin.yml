@@ -1,0 +1,23 @@
+name: ModTools
+version: ${project.version}
+description: ${project.description}
+
+author: Jacob Gillespie
+website: ${project.url}
+
+main: gg.obsidian.modtools.ModTools
+
+commands:
+  spy:
+    description: Toggles the ability to spy on PMs
+
+permissions:
+  modtools.use:
+    description: Allows the use of ModTools
+    default: op
+  modtools.spy:
+    description: Allows the use of ModTools spy
+    default: op
+  modtools.spy.auto:
+    description: Automatically enables spy on join
+    default: false

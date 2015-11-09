@@ -1,0 +1,15 @@
+# Prefix for plugin message
+prefix: '&8[&7ModTools&8] &7'
+
+# Format for spied private message
+spy-format: '&8[&7%from% &8-> &7%to%&8] &7%msg%'
+
+# Commands watched by spy
+watched-commands:
+  - m
+  - msg
+  - r
+  - reply
+  - t
+  - tell
+  - whisper

@@ -1,0 +1,13 @@
+language: java
+jdk:
+- oraclejdk8
+
+deploy:
+  provider: releases
+  api_key:
+    secure: i69Ci149qroyjyvq86Za2d99eXLdvDJkQUxPFld1HTwq3/KAMzeTMvXwePhzNinlI6tL8gz+sCqbVc7a+c9WxzQ9uyFjx56nalbXkpKHS+g8P6U3JiK+807XhoSn3YPB0bHMHjDZaGUjd435NQ7RPzbgRluWJFO0XLiJ1DhkDPYzYoN9T4S18USeVQPVIe8XW0r5/7oGLQbdGjH39LKpfpYXVrEMddwnqrjs4jjYUmNVOABiW+lMCkWi71aR4xE6MOvwaTKlmXZoX6YA3atUVBJtIDQfLoo4ubgFWKzOs0Azmt9Vn8p9tnxEQCNNhsuZfj6J1Rauat94VLrmgfRNFYFhT0aUr87TkE5l1nJuX8mUSSX4zj+5AFaR6NB7OsEfVrzZHE5grd7YJL3eks5CflLQVx8NIuhLAKU+fRxp26+ckQVNcLuB2xKIIZtFO8FYDItl2A2nCyvA6KZXFu/5OR1wUI/QoKroYNjpQhgfFp8Cn2+Zy5FLUMk18DWcb1ljrk4lr41lAfnbkcZ6DP3aQw1IQZWekhbKmYN2LzLJr889EPvdL5nyxXutR1kjpJOw3K0kafFQHNTSdivhV6hSgY8ns8sIZGQslwMcwgUpSYOVANRAz1lIRXNkAOfVeJfbth/my9/X6eb4gtD0o5FkHus3Y30enOddu1eYIdCZRuY=
+  file: target/ModTools-*.jar
+  file_glob: true
+  on:
+    repo: the-obsidian/ModTools
+    tags: true
